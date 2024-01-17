@@ -130,3 +130,22 @@ select {
 	cursor: pointer;
 	pointer-events: none;
 }
+
+@media (max-width: 76.8rem) {
+	form {
+		flex-direction: column;
+	}
+	.todo-list {
+		width: 60%;
+	}
+}
+
+@media (max-width: 56rem) {
+	form {
+		text-align: center;
+	}
+	input {
+		text-align: center;
+		width: 70%;
+	}
+}

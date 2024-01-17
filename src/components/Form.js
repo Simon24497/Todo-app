@@ -26,18 +26,21 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
 
 	return (
 		<form>
-			<input
-				onChange={inputTextHandler}
-				value={inputText}
-				type="text"
-				className="todo-input"
-			/>
-			<button
-				onClick={submitHandler}
-				type="submit"
-				className="todo-button">
-				<i className="fas fa-plus-square"></i>
-			</button>
+			<div>
+				<input
+					onChange={inputTextHandler}
+					value={inputText}
+					type="text"
+					className="todo-input"
+				/>
+				<button
+					onClick={submitHandler}
+					type="submit"
+					className="todo-button">
+					<i className="fas fa-plus-square"></i>
+				</button>
+			</div>
+
 			<div className="select">
 				<select
 					onChange={statusHandler}
